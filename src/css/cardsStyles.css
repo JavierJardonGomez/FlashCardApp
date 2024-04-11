@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: #f7f8b1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color:aquamarine;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 30px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffcc;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffff99;
+}
+
+tr:hover {
+    background-color: #f7f463;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions {
+    text-align: right; /* Alinea los botones de acciones a la derecha */
+}
+
+.edit-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff3333;
+    color: white;
+}

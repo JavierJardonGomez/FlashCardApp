@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: #f7f8b1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    color:aquamarine;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.container {
+    width: 50%;
+    background-color: #ffff80; /* Amarillo claro */
+    padding: 20px;
+    border-radius: 20px; /* Bordes más redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el input de título */
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffcc; /* Amarillo más oscuro */
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+    text-align: center; /* Centra el texto del marcador de posición */
+}
+
+/* Estilos para el textarea de contenido */
+textarea {
+    width: 100%; /* Ancho ajustado según tu preferencia */
+    height: 250px; /* Altura ajustada según tu preferencia */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffcc; /* Amarillo más oscuro */
+    box-sizing: border-box;
+    resize: none; /* Evita la redimensionabilidad con el ratón */
+}
+
+textarea::placeholder {
+    text-align: center; /* Centra el texto del marcador de posición */
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0f0f0; /* Color de botón clarito */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0; /* Color de botón más oscuro al pasar el ratón */
+}
+
+
+
