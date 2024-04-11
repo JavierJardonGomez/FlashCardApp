@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCardApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                Cards
+            </li>
+            <li>
+                New Card
+            </li>
+            <li>
+                Study
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <form id="cardForm">
+                <input type="text" name="card-title" placeholder="Enter title" />
+                <textarea type="text" name="card-content" placeholder="Enter answer"></textarea>
+                <div class="button-actions">
+                    <button type="submit">Add Card</button>
+                    <button type="reset">Clean Card</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
