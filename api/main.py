@@ -1,4 +1,5 @@
 import json
+import random
 import time
 
 from fastapi.encoders import jsonable_encoder
@@ -42,6 +43,15 @@ def get_card(id: int) -> Card:
             return card 
         
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Card not found")
+
+@app.get("/randomCard", response_model=Card)
+def get_random_card() -> Card:
+    with open('api/cards.json', 'r') as file:
+        cards = json.load(file)
+
+    cards: List[Card]= list(cards)
+    random_card = random.choice(cards)
+    return random_card
 
 @app.post("/card")
 def create_card(create_card: CreateCard, response: Response):
