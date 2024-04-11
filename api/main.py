@@ -5,11 +5,20 @@ from fastapi.encoders import jsonable_encoder
 from uvicorn import run
 from typing import List
 from fastapi import FastAPI, Response, status, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from api.validate_models.card import Card
 from api.validate_models.create_card import CreateCard
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permitir solicitudes desde cualquier origen
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def create_id():
     return int(time.time() * 1000)
